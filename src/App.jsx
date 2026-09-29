@@ -1,3 +1,4 @@
+import Hero from "./Hero";
 import Navbar from "./Navbar";
 
 function App(){
@@ -5,7 +6,7 @@ function App(){
     <>
     <Navbar />
     <main>
-      <h1>Leaf & Steam</h1>
+      <Hero />
     </main>
     </>
   )

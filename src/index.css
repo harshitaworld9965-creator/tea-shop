@@ -19,17 +19,7 @@ body {
   min-height: 100vh;
 }
 
-main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-}
 
-h1 {
-  font-size: 4rem;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-}
 
 .navbar {
   display: flex;
@@ -56,4 +46,53 @@ h1 {
 
 .nav-links a:hover{
   color: var(--clay);
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, var(--cream), #ece3d6);
+
+}
+
+.hero-eyebrow{
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  color: var(--sage);
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem ,7vw, 5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero-text{
+  max-width: 32rem;
+  margin: 1.5rem 0 2.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.button {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2 ease, transform 0,2s ease;
+}
+
+.button hover{
+  background: var(--clay);
+  transform: translateY(-2px);
 }
